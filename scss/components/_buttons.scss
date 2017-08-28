@@ -1,0 +1,71 @@
+/* Components -> Button Styles */
+
+.requirement {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 3px;
+    @include transition-all;
+    transition-duration: .25s;
+    border: solid 3px;
+    @include mq($from: tablet) {
+        margin: 5px;
+    }
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    }
+    [data-requirement-list="sector"] & {
+        color: $color-primary;
+        &.active {
+            background-color: $color-primary;
+            color: white;
+            border-color: $color-primary;
+        }
+    }
+    [data-requirement-list="foundational"] & {
+        color: $color-secondary;
+        &.active {
+            background-color: $color-secondary;
+            color: white;
+            border-color: $color-secondary;
+        }
+    }
+}
+
+.button {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    padding: 15px 30px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    border-radius: 3px;
+    color: map-get($color, 'background');
+    background: map-get($color, 'primary');
+    background-size: 200% auto;
+    background-position: initial;
+    @include transition-all;
+    transition-duration: .25s;
+    &:hover {
+        transform: translateY(-1px);
+        background-position: 99% center;
+    }
+    &.outline {
+        color: black;
+        padding: 12px 27px;
+        border: solid 3px;
+        background: transparent;
+    }
+    &.menuTrigger {
+        color: white;
+    }
+    &.save {
+        background: $color-success;
+        display: none;
+        &.active {
+            display: inline-block;
+        }
+    }
+}

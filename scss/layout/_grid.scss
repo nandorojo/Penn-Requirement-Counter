@@ -1,0 +1,39 @@
+/* Layout -> Navigation Styles */
+
+table {
+    display: block;
+    margin-top: 40px;
+    font-size: small;
+    @include mq($from: tablet) {
+        font-size: initial;
+    }
+}
+
+tbody {
+    display: block
+}
+
+tr {
+    @include display-flex;
+    &.tableHeader {}
+}
+
+th,
+td {
+    padding: 5px;
+    flex: 1;
+    margin: 5px 0;
+}
+
+.tableHeader {
+    position: sticky;
+    top: 79px;
+    background: white;
+}
+
+.course {
+    display: none;
+    &.active {
+        @include display-flex;
+    }
+}

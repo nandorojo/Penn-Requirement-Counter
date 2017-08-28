@@ -1,0 +1,17 @@
+/* Pages -> Home Styles */
+
+.requirementListContainer {
+    @include mq($from: tablet) {
+        @include display-flex;
+    }
+}
+
+.requirementList {
+    @include mq($from: tablet) {
+        flex: 1;
+    }
+}
+
+.saveContainer {
+	margin: 50px 0;
+}

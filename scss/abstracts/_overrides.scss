@@ -1,0 +1,30 @@
+.tablet-hidden {
+    @include mq($from: tablet) {
+        display: none;
+    }
+}
+
+.tablet-only {
+    @include mq($until: tablet) {
+        display: none;
+    }
+}
+
+.desktop-only {
+    @include mq($until: desktop) {
+        display: none;
+    }
+}
+
+.overflowHidden {
+    overflow: hidden;
+}
+
+.center {
+	text-align: center;
+}
+
+.hideUp {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%)
+}
