@@ -1,7 +1,9 @@
-#doubleCounter
+# doubleCounter
+
 doubleCounter helps Penn students in the School of Arts and Sciences find classes that double count requirements.
 
-#docs
+# docs
+
 Each course has a `data-sector` and `data-foundational` attribute. 
  
 The first attribute shown is a sector, and the second is a foundational.
