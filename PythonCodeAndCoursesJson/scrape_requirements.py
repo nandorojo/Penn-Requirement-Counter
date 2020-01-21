@@ -56,7 +56,7 @@ def combine_sectors_and_foundations(sectors, foundations):
 def turn_array_into_d_with_course_id(arr):
 	d = {}
 	for a in arr:
-		d[a['courseId']] = a
+		d[a['courseID']] = a
 	return d
 
 def turn_valids_into_d(valids):
@@ -68,7 +68,7 @@ def turn_valids_into_d(valids):
 			continue
 		d = {
 			'courseName': valid[0],
-			'courseId': valid[1],
+			'courseID': valid[1],
 			'term': valid[2],
 			'sector': valid[3],
 			'dataSector': valid[4]
